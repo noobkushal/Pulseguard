@@ -3,7 +3,7 @@
  * Connects the React frontend to the FastAPI backend at localhost:8000.
  */
 
-const API_BASE = "http://localhost:8000";
+const API_BASE = import.meta.env.VITE_API_BASE || "https://ross-traveling-brass-laughing.trycloudflare.com";
 
 // ─── Types matching backend response ───
 
